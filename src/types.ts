@@ -19,6 +19,4 @@ export interface MasterSkill{
   companies: string[];
 }
 
-export interface MasterSkillList{
-  [key: string]: MasterSkill;
-}
+export type MasterSkillList = Record<string, MasterSkill>;

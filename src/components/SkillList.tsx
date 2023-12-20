@@ -9,7 +9,7 @@ interface SkillListProps {
 const SkillList: React.FC<SkillListProps> = ({
   skillList,
   skillsMatch = [],
-  onHoverSkill = (skill: string) => undefined,
+  onHoverSkill = (_: string) => undefined,
 }) => {
   return (
     <>

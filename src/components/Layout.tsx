@@ -1,4 +1,5 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import type {ReactNode} from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";

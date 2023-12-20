@@ -1,4 +1,4 @@
-import { Company, Project } from "../types";
+import type { Company, Project } from "../types";
 import SkillList from "./SkillList";
 
 export default function CompanyComponent({ company }: { company: Company }) {

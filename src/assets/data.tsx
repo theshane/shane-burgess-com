@@ -1,4 +1,4 @@
-import { Company, MasterSkillList, Project } from "src/types";
+import type { Company, MasterSkillList, Project } from "src/types";
 
 export const strata: Company = {
     company: "Strata Oncology",
@@ -47,7 +47,7 @@ export const gm: Company = {
             "The app was built in React Native and required a little bit of native development of the iOS and Android platforms.",
             "We used TDD and pair programming to build the components and had a high level of test coverage.",
         ],
-        skills: ["React Native", "CSS", "API Integration", "TDD", "Pair Programming", "Jenkins"]
+        skills: ["React", "React Native", "CSS", "API Integration", "TDD", "Pair Programming", "Jenkins", "TypeScript"]
     },{
         title: "MyBrand Mobile App Map Replacement",
         description: [
@@ -74,7 +74,7 @@ export const nokia: Company = {
             "The UI was built in React and MaterialUI",
             "We used Python on the backend",
         ],
-        skills: ["JavaScript", "ES6", "jQuery", "Less", "CSS", "HTML5", "ReactJS", "Python", "MySQL"]
+        skills: ["JavaScript", "ES6", "jQuery", "Less", "CSS", "HTML5", "React", "Python", "MySQL"]
     }]
 }
 
@@ -93,7 +93,7 @@ export const fordCredit: Company = {
             "Built different blockchain environments for those who wanted to have more control over their projects.",
             "Setup fully deployable blockchain environment so participants could get up and running quickly.",
         ],
-        skills: ["JavaScript", "Angular", "NodeJs", "Ethereum Smart Contracts", "HTML5", "CSS", "TDD", "Pair Programming", "CI/CD", "Jenkins", "Docker"]
+        skills: ["JavaScript", "Angular", "NodeJs", "Ethereum Smart Contracts", "HTML5", "CSS", "TDD", "Pair Programming", "CI/CD", "Jenkins", "Docker", "TypeScript"]
     },{
         title: "Hyperledger Fabric POC",
         description: [
@@ -101,7 +101,7 @@ export const fordCredit: Company = {
             "Built a fully functional blockchain application that was used to show the value of blockchain to the business.",
             "Did so with very little documentation and support available due to the new technology.",
         ],
-        skills: ["Hyperledger", "JavaScript", "Angular", "NodeJs", "HTML5", "CSS", "TDD", "Pair Programming", "CI/CD", "Jenkins", "Docker"]
+        skills: ["Hyperledger", "JavaScript", "Angular", "NodeJs", "HTML5", "CSS", "TDD", "Pair Programming", "CI/CD", "Jenkins", "Docker", "TypeScript"]
     }]
 }
 
@@ -130,7 +130,7 @@ export const merit: Company = {
             "Custom built a tool to allow our NOC to track and manage tickets and notifying our customers of outages.",
             "The project was built in Perl (Catalyst), Oracle Database, and MySQL.",
         ],
-        skills: [ "JavaScript", "Jquery", "Perl", "Perl Catalyst", "CSS", "MVC"]
+        skills: [ "JavaScript", "JQuery", "Perl", "Perl Catalyst", "CSS", "MVC"]
     }]
 }
 

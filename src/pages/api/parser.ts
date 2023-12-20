@@ -9,7 +9,8 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>,
 ) {
-  const parser = new Parser(req.body.jobPostingText, req.body.masterSkillList);
+  const {jobPostingText = "", masterSkillList = []} = req.body as {jobPostingText: string, masterSkillList: string[]};
+  const parser = new Parser(jobPostingText, masterSkillList);
   parser.parse();
   res.status(200).json({ matches: parser.matches });
 }
