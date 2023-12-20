@@ -1,6 +1,8 @@
 
 import React from "react";
 
+const placeHolder = "Paste the details of your job posting or the specific skills you are seeking here, and I will illustrate how my skills align with your requirements. If there's a skill you require that I currently lack, rest assured that I am a rapid learner and am eager to acquire new abilities."
+
 const Matcher = ({
   postJobTextHandler,
   clearSkillsMatch,
@@ -14,11 +16,12 @@ const Matcher = ({
     setJobPostingText("");
   };
 
+
   return (
     <div className="mt-10 mt-auto text-center">
       <textarea
         className="mt-2 h-40 w-full rounded border border-gray-400 p-2 text-black"
-        placeholder="Paste your job posting text or skills that you are looking for here to see how my skills match up. If I am missing a skill that you are looking for I am a quick learner and would love to learn it."
+        placeholder={placeHolder}
         value={jobPostingText}
         onChange={(e) => setJobPostingText(e.target.value)}
       ></textarea>

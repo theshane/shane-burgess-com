@@ -14,7 +14,7 @@ export default function Home() {
 
 
   const expandedMasterSkillList = getMasterSKillList();
-  
+
 
   const getCompaniesBySelectedSkill = (skill: string) => {
     return new Set(expandedMasterSkillList[skill]!.companies);
@@ -22,7 +22,7 @@ export default function Home() {
 
   let companiesToHighlight = new Set<string>();
 
-  if(hoverSkill !== "") {
+  if (hoverSkill !== "") {
     companiesToHighlight = getCompaniesBySelectedSkill(hoverSkill);
   }
 
@@ -35,38 +35,33 @@ export default function Home() {
         <section id="about">
           <h1 className="p-5 text-4xl">About Me</h1>
           <p className="p-5 text-xl">
-            My Name is Shane Burgess and I live in Monroe, MI with my wife and 2
-            kids. I am a Senior Software Engineer with 10+ years of experience.
-            I have worked in a variety of industries and have experience with a
-            variety of technologies across the web stack.
-          </p>
-          <p className="p-5 text-xl">
-            I am an experienced software developer with team lead experience,
-            who has written production code in both Angular and React on the
-            front end and NodeJS, Python, and Perl on the backend. I have also
-            worked on Mobile apps using React Native.
+            Greetings! I'm Shane Burgess, a resident of Monroe, MI, happily living with my wife and two kids. With over 10 years of experience as a Senior Software Engineer, I've contributed my skills across various industries, showcasing versatility in technologies spanning the web stack.
           </p>
 
           <p className="p-5 text-xl">
-            This site is a fun way to display my skills and experience. Please don't make fun of the design too much :). It was built using Tailwind, React, and NextJS.
+            As an adept software developer, I bring team lead experience to the table, having crafted production code in Angular and React for front-end development, and utilized NodeJS, Python, and Perl for backend solutions. My proficiency extends to mobile app development with React Native.
+          </p>
+
+          <p className="p-5 text-xl">
+            This site serves as a creative showcase of my skills and experience—a fun endeavor that, despite its design quirks (feel free to chuckle!), was meticulously crafted using Tailwind, React, and NextJS.
           </p>
         </section>
 
         <section id="skills" className="p-5">
           <h1 className="mb-5 text-4xl">Skills</h1>
           <p>Hover over a skill to see where I have used it</p>
-          <SkillList skillList={masterSkillList} skillsMatch={skillsMatch} onHoverSkill={setHoverSkill}/>
+          <SkillList skillList={masterSkillList} skillsMatch={skillsMatch} onHoverSkill={setHoverSkill} />
         </section>
         <section id="work-history">
           <h1 className="p-5 text-4xl">Work History</h1>
           <ul className="p-5 text-lg list-disc">
             {companies.map((company) => (
               companiesToHighlight.has(company.company) ?
-            <li className="p-2 text-4xl" key={company.company}>
-              <a href={company.route}>{company.company} - {company.title}</a>
-            </li> :    <li className="p-2 text-xl"  key={company.company}>
-              <a href={company.route}>{company.company} - {company.title}</a>
-            </li>))}
+                <li className="p-2 text-4xl" key={company.company}>
+                  <a href={company.route}>{company.company} - {company.title}</a>
+                </li> : <li className="p-2 text-xl" key={company.company}>
+                  <a href={company.route}>{company.company} - {company.title}</a>
+                </li>))}
           </ul>
         </section>
       </div>
